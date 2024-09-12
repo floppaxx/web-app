@@ -133,9 +133,6 @@ func main (){
 	http.HandleFunc("/", index)
 	http.HandleFunc("/posts", blog)
 	http.HandleFunc("/posts/{id}", blogpost)
-	readPostsDit("./posts")
-	markdownToHTML("./posts/kubernetes.md")
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
-
 }
