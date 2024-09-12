@@ -1,0 +1,5 @@
+/bin
+/posts/*
+!/posts/md_func_test.md
+/tmp
+.air.toml
